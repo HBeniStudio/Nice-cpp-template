@@ -26,11 +26,18 @@
 *.a
 *.lib
 
+# Debug and linker outputs
+*.pdb
+*.ilk
+*.exp
+*.log
+
 # Executables
 *.exe
 *.out
 *.app
 
+# CMake / build artifacts
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
@@ -42,8 +49,14 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
-
-# Build files
 build/
+
+# IDE / local tool state
 .vs/
+.vscode/settings.json
 CMakeSettings.json
+
+# Keep shared VS Code template config tracked
+!.vscode/
+!.vscode/tasks.json
+!.vscode/launch.json
